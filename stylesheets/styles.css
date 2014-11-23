@@ -709,7 +709,6 @@ header p {
   padding-right: 10px;
 }
 #banner .button {
-  display: inline-block;
   border: 1px solid #dba500;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
   background: -webkit-linear-gradient(#ffe788, #ffce38);
@@ -748,10 +747,7 @@ header p {
   background-color: #ffeca0;
 }
 #banner .fork {
-  display: inline-block;
-  position: fixed;
   left: 50%;
-  margin-left: -325px;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
@@ -938,7 +934,6 @@ footer {
     float: left;
     display: inline-block;
     margin-left: 0px;
-    position: fixed;
     left: 20px;
   }
 
