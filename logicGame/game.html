@@ -98,6 +98,9 @@ align:center;
 <div class="container">
   <div class="header"><h1 class="header">Logic Game</h1></div>
   <div class="right">
+	<h2>Instructions</h2>
+	<p>Use the following clues to fill in the correct boxes in the grid as true or false.</p>
+	<h3>Clues:</h3>
 	<p title="Brian is older than Sam">1. Brian.age > Sam.age</p>
 	<p title="Sam is 18">2. Sam.age == 18</p>
 	<p title="Brian is younger than Joshua">3. Brian.age < Joshua.age</p>
@@ -170,7 +173,7 @@ function checkAnswer() {
 	if (chkAns == answer) {
 		alert("great job!");
 	} else {
-		alert("you loose :(");
+		alert("you lose :(");
 	}
 	
 }
