@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+body {
+	background-color: rgb(0,0,50);
+}
+
+code{
+	color: yellow;
+	font-size: 120%;
+}
+
+img {
+	padding-bottom: 10px;
+	    display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	color: lawngreen;
+}
+
+h5 {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	color: white;
+		font-size: 120%;
+
+}
+
+h4 {
+	text-align: left;
+	font-size: 120%;
+	color: white;
+}
+
+p {
+	text-align: center;
+	font-size: 100%;
+	color: white;
+}
+
+li {
+	color: white;
+}
+
+div.container {
+    width: 100%;
+    margin: 0px;
+    line-height: 150%;
+}
+
+div.header, div.footer {
+    padding: 0.5em;
+    color: darkblue;
+    background-color: yellow;
+    clear: left;
+}
+
+h1.header {
+    padding: 0;
+    margin: 0;
+}
+
+div.right {
+    float: right;
+    width: 300px;
+    margin: 0;
+    padding: 1em;
+}
+
+div.content {
+    padding: 1em;
+}
+
+div.textContainer {
+    padding-left:25%;
+	padding-right:25%;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="header"><h1 class="header">Scratch to Python</h1></div>
+  
+  <div class="content">
+    <h2><center>Part 1: Scratch!</center></h2>
+	<div class="textContainer">
+		<h4>Task 1: Create a program in Scratch that does three things</h4>
+			<ol>
+				<li>Asks "What is your first name?"</li>
+				<li>Asks "What is your last name?"</li>
+				<li>Says "Your name is &lt;firstName> &lt;lastName>!"</li>
+		
+		<h5>Step 1</h5>
+		<img src="firstName.png">
+		<h5>Step 2</h5>
+		<img src="lastName.png">
+		<h5>Step 3</h5>
+		<img src="response.png">
+		<h3>Show me when you are done!</h3>
+		<p>Hint: you are going to need at least these blocks</p>
+		<img src="blocks.png">
+
+	</div> <br>
+  <div class="header"><h1 class="header"></h1></div>
+	<h2>Part 2: Command Line!</h2>
+	<div class="textContainer">
+		<h4>Open your command prompt</h4>
+		<ol>
+			<li>Click on the Start menu</li>
+		    <li>Type <code>cmd</code>. Click on cmd. this will open the command prompt.</li>
+		</ol>
+		<img src="cmd.png">
+		<h4>Open Window's Explorer (not Internet Explorer)</h4>
+		<ol>
+			<li>Click on the Start menu </li>
+			<li>On the right panel, click "Computer"</li>
+			<li>Find where you are on in the command prompt - 
+		(you probably need to click on the C drive, then Users, then your username).</li>
+		</ol>
+		<img src="explorer.png">
+		<h4>Explore your files and folders</h4>
+		<ol>
+			<li>In the command prompt, type <code>dir</code> - this will show you which files and folders are in your current directory</li>
+			<li>Make a new directory called "Documents". Type <code>mkdir Documents</code></li>
+			<li>Type <code>dir</code> again. Notice that Documents is now listed (if you click the refresh button in Window's Explorer, you should see Documents appear)</li>
+			<li>Type <code>cd Documents</code>. You are now inside the Documents folder</li>
+		</ol>
+		<img src="docs.png">
+		<h4>Task 2: Use command prompt to create a folder inside Documents called "Programming"</h4>
+		<h3>Show me when you are done!</h3>
+	</div> <br>
+  <div class="header"><h1 class="header"></h1></div>
+	<h2>Part 3: Python!</h2>
+	<div class="textContainer">
+		<h4>Intro</h4>
+		<ol>
+			<li>Inside the command prompt type <code>python</code></li>
+		    <li>Type some basic math expressions i.e. <code>1+2</code> or <code>94*(5+8)/30</code></li>
+			<li>Now pick a favorite number and assign it to a variable. i.e. <code>b=12</code></li>
+			<li>Try some basic math expressions with the variable. i.e. <code>b/3</code></li>
+			<li>Now pick a favorite word and assign it to a variable (don't forget the quotes). i.e. <code>word="favorite"</code><li>
+			<li>Try some of the math expressions with your word variable. Do any of them work?</li>
+			<li>Notice that words need quotes while numbers don't. This is because words are declared as <strong>strings</strong>.
+		</ol>
+		<img src="intro.png">
+		<h4>Task 3: Declare some numbers as string variables and try adding them.</h4>
+		<h3>Show me when you are done!</h3>
+		<h4>Dive Into Python</h4>
+		<ol>
+			<li>Inside the command prompt type [Ctrl-Z] [Enter] followed by <code>notepad++ firstProgram.py</code>.  This should open a new window.</li>
+			<li>Type some of the same commands you ran for the <strong>Intro</strong> section. Each command should be on a new line.</li>
+			<li>Pick a command you want to see the result of and put it in the print function. i.e. if you want to see the answer to 3+4, type <code>print(3+4)</code></li>
+			<li>To run your code, go to the command prompt and type <code>python firstProgram.py</code>. <strong>Make sure you save first!!</strong></li>
+		</ol>
+		<img src="programRunning.png">
+		<h3>Show me when you are done!</h3>
+		<h4>Strings!</h4>
+		<ol>
+			<li>You can ask for input from the user. Type <code>name=input("What is your name? ")</code>.</li>
+			<li>Print name.</li>
+			<li>Save and run your program.</li>
+			<li>When your program asks for input, type something and hit [Enter]</li>
+		</ol>
+		<h4>Task 4: Write the same program you wrote in Task 1.</h4>
+		<ul>
+			<li>Hint: You might need to look up "python string concatenation"</li>
+		</ul>
+		<h3>Show me when you are done!</h3>
+		</h4>
+	</div>
+</body>
+
+</html>
