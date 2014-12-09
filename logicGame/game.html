@@ -2,19 +2,48 @@
 <html>
 
 <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Programming Games</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
 <style>
 div.container {
+	padding-top: 200px;
     width: 100%;
     margin: 0px;
     border: 1px solid gray;
     line-height: 150%;
 }
 
-div.header, div.footer {
-    padding: 0.5em;
-    color: white;
-    background-color: gray;
-    clear: left;
+div.footer {
+  z-index: 100;
+  left: 0;
+  right: 50%;
+  height: 20px;
+  margin-right: -382px;
+  top: 115px;
+  background: #ffcc00;
+  border: 1px solid #f0b500;
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-border-radius: 0px 2px 2px 0px;
+  -webkit-border-radius: 0px 2px 2px 0px;
+  -o-border-radius: 0px 2px 2px 0px;
+  -ms-border-radius: 0px 2px 2px 0px;
+  -khtml-border-radius: 0px 2px 2px 0px;
+  border-radius: 0px 2px 2px 0px;
+  padding-right: 10px;
 }
 
 h1.header {
@@ -23,7 +52,7 @@ h1.header {
 }
 
 div.right {
-    float: right;
+	float: right;
     width: 300px;
     margin: 0;
     padding: 1em;
@@ -95,8 +124,22 @@ align:center;
 </head>
 
 <body>
+      <header>
+        <h1>Programming Games</h1>
+        <p>Logic</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+        <a href="https://github.com/jopaleski" class="button fork"><strong>View On GitHub</strong></a>
+		
+		<a href="http://jopaleski.github.io/" class="button fork">Home</a>
+		
+		<a href="http://jopaleski.github.io/logicGame/game.html" class="button fork">Logic Game</a>
+
+		<a href="http://jopaleski.github.io/python/scratch2pythonTutorial.html" class="button fork">Scratch to Python</a>
+      </div><!-- end banner -->
 <div class="container">
-  <div class="header"><h1 class="header">Logic Game</h1></div>
   <div class="right">
 	<h2>Instructions</h2>
 	<p>Use the following clues to fill in the correct boxes in the grid as true or false.</p>
@@ -117,7 +160,7 @@ align:center;
 	<tr>
 		<th class="horizontal_condition">18</th>
         <td id="00" class="background_one" onClick="changeArrow(this)"></td>
-        <td id="01"class="background_one" onClick="changeArrow(this)"></td>
+        <td id="01" class="background_one" onClick="changeArrow(this)"></td>
         <td id="02" class="background_one" onClick="changeArrow(this)"></td>
     </tr>
     <tr>
@@ -133,7 +176,7 @@ align:center;
         <td id="22" class="background_one" onClick="changeArrow(this)"></td>
     </tr>
 </table>
-<p align="center">
+<p align="center" style="PADDING-TOP: 20px">
 <button onClick="checkAnswer()">Check</button>
 </p>
 	
