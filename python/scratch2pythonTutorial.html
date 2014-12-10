@@ -63,8 +63,15 @@ div.container {
     line-height: 150%;
 }
 
-div.header, div.footer {
+div.header {
     padding: 0.5em;
+    color: darkblue;
+    background-color: yellow;
+    clear: left;
+}
+
+div.footer {
+	padding-left: 0.3em;
     color: darkblue;
     background-color: yellow;
     clear: left;
@@ -131,13 +138,12 @@ div.textContainer {
 		<ol>
 			<li>Click on the Start menu </li>
 			<li>On the right panel, click "Computer"</li>
-			<li>Find where you are on in the command prompt - 
-		(you probably need to click on the C drive, then Users, then your username).</li>
+			<li>Using Windows Explorer, find where you are on in the command prompt - (you probably need to click on the C drive, then Users, then your username).</li>
 		</ol>
 		<img src="http://jopaleski.github.io/python/explorer.PNG">
 		<h4>Explore your files and folders</h4>
 		<ol>
-			<li>In the command prompt, type <code>dir</code> - this will show you which files and folders are in your current directory</li>
+			<li>In the command prompt, type <code>dir</code> - this will show you which files and folders are in your current directory (directory is another name for folder)</li>
 			<li>Make a new directory called "Documents". Type <code>mkdir Documents</code></li>
 			<li>Type <code>dir</code> again. Notice that Documents is now listed (if you click the refresh button in Windows Explorer, you should see Documents appear)</li>
 			<li>Type <code>cd Documents</code>. You are now inside the Documents folder</li>
@@ -174,7 +180,7 @@ div.textContainer {
 		<h4>Strings!</h4>
 		<ol>
 			<li>You can ask for input from the user. Type <code>name=input("What is your name? ")</code>.</li>
-			<li>Print name.</li>
+			<li>Print the variable "name".</li>
 			<li>Save and run your program.</li>
 			<li>When your program asks for input, type something and hit [Enter]</li>
 		</ol>
@@ -185,6 +191,7 @@ div.textContainer {
 		<h3>Show me when you are done!</h3>
 		</h4>
 	</div>
+  <div class="footer">Contact: Jessica Opaleski -- jopalesk@umich.edu</div>
 </body>
 
 </html>
